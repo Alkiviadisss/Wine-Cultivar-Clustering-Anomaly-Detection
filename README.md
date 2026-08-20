@@ -1,11 +1,13 @@
-# Wine Cultivar Clustering & Anomaly Detection Pipeline
+# Wine Cultivar Clustering & Anomaly Detection
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3%2B-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![MLflow](https://img.shields.io/badge/MLflow-2.9%2B-0194E2?style=flat&logo=mlflow&logoColor=white)](https://mlflow.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An end-to-end unsupervised machine learning pipeline for discovering chemical cultivar groupings in wine datasets. This project combines variance-preserving dimensionality reduction via Principal Component Analysis (PCA), robust anomaly detection using Isolation Forests, comparative cluster modeling across multiple algorithms, dynamic MLflow experiment tracking, and publication-ready 2D decision boundary visualization.
+An end-to-end unsupervised machine learning pipeline for discovering chemical cultivar groupings in wine datasets. This project combines variance-preserving dimensionality reduction via Principal Component Analysis (PCA), Robust Anomaly Detection using Isolation Forests, comparative cluster modeling across multiple algorithms, dynamic MLflow experiment tracking, and publication-ready 2D decision boundary visualization.
+
+**This project is being done for practice, not as a finished product.**
 
 ---
 
@@ -36,7 +38,7 @@ An end-to-end unsupervised machine learning pipeline for discovering chemical cu
 
 | Model / Strategy | Outlier Filtering | Silhouette Score | Status |
 | :--- | :---: | :---: | :---: |
-| **$K$-Means + Isolation Forest** | **Yes (10%)** | **0.359** | 🏆 **Best Performer** |
+| **$K$-Means + Isolation Forest** | **Yes (10%)** | **0.359** | **Best Performer** |
 | **Gaussian Mixture + Isolation Forest** | Yes (10%) | 0.357 | Runner-Up |
 | **$K$-Means (Baseline)** | No | 0.325 | Baseline |
 | **Gaussian Mixture (Baseline)** | No | 0.321 | Baseline |
@@ -48,15 +50,10 @@ An end-to-end unsupervised machine learning pipeline for discovering chemical cu
 
 ```text
 wine-cultivar-clustering/
-├── assets/
-│   └── Figure_1.jpg          # Generated PCA decision boundary plot
-├── data/
-│   └── wine-clustering.csv   # Chemical cultivar dataset
-├── mlruns/                   # MLflow experiment tracking metadata & artifacts
-├── src/
-│   └── wine_clustering.py    # Main training and visualization script
+│── Figure_1.png          # Generated PCA decision boundary plot
+│── wine-clustering.csv   # Chemical cultivar dataset
+│── wine-unsupervised.py    # Main training and visualization script
 ├── requirements.txt          # Environment dependencies
-├── LICENSE                   # MIT License
 └── README.md                 # Project documentation
 ```
 
@@ -69,8 +66,8 @@ wine-cultivar-clustering/
 Clone the repository and set up a virtual environment:
 
 ```bash
-git clone https://github.com/your-username/wine-cultivar-clustering.git
-cd wine-cultivar-clustering
+git clone https://github.com/Alkiviadisss/Wine-Cultivar-Clustering-Anomaly-Detection.git
+cd Wine-Cultivar-Clustering-Anomaly-Detection
 
 python -m venv venv
 # On macOS/Linux:
@@ -87,7 +84,6 @@ Install the required Python packages:
 pip install -r requirements.txt
 ```
 
-*(Contents of `requirements.txt`)*:
 ```text
 pandas>=2.0.0
 numpy>=1.24.0
@@ -104,7 +100,7 @@ seaborn>=0.13.0
 Execute the main pipeline to run transformations, train models, log experiments, and display the visualization:
 
 ```bash
-python src/wine_clustering.py
+python src/wine-unsupervised.py
 ```
 
 ### 4. Launch MLflow Tracking Dashboard
@@ -136,7 +132,7 @@ Then navigate to `http://localhost:5000` in your web browser.
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/wine-cultivar-clustering/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Alkiviadisss/Wine-Cultivar-Clustering-Anomaly-Detection/issues).
 
 ---
 
