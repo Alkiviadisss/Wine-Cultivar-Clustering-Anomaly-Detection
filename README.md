@@ -7,7 +7,7 @@
 
 An end-to-end unsupervised machine learning pipeline for discovering chemical cultivar groupings in wine datasets. This project combines variance-preserving dimensionality reduction via Principal Component Analysis (PCA), Robust Anomaly Detection using Isolation Forests, comparative cluster modeling across multiple algorithms, dynamic MLflow experiment tracking, and publication-ready 2D decision boundary visualization.
 
-**This project is being done for practice, not as a finished product.**
+**This project is being done to practice unsupervised learning, rather than as a finished product.**
 
 ---
 
