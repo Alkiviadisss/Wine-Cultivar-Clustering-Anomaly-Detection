@@ -12,7 +12,7 @@ An end-to-end unsupervised machine learning pipeline for discovering chemical cu
 ## Cluster Visualization
 
 <p align="center">
-  <img src="assets/Figure_1.jpg" alt="Wine Cultivar Clustering Analysis" width="850"/>
+  <img src="assets/Figure_1.png" alt="Wine Cultivar Clustering Analysis" width="850"/>
 </p>
 
 * **Voronoi Decision Regions:** Segmented via KD-Tree spatial indexing over the 2D PCA projection space.
